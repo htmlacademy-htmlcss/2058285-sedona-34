@@ -18,24 +18,45 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
   color: #000000;
   background-color: #ffffff;
 }
 
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  background-color: #82B3D3;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.button-big {
+  font-size: 20px;
+  line-height: 36px;  
+}
+.button-brown {
+  background-color: #756157;
+}
+buuton-in-favorite {
+  background: #7DB54F;
+}
+.main-index {
+  text-align: center;
+}
 .page-header {
   font-size: 20px;
   color: #000000;
   background-color: #ffffff;
   font-weight: 700;
-  text-align: left;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 .navigation-link {
   font-weight: 700;
-  text-align: center;
   color: #000000;
   background-color: #ffffff;
   text-decoration: none;
@@ -95,7 +116,6 @@ body {
   background-repeat: no-repeat;
   color: #ffffff;
 }
-
 .page-footer-title {
   font-size: 30px;
   line-height: 36px;
@@ -108,4 +128,59 @@ body {
   font-size: 40px;
   line-height: 40px;
   color: #000000;
+}
+.hotel-filters {
+background-image: url("../images/background-filters.jpg");
+background-size: 100% auto;
+background-repeat: no-repeat;
+color: #ffffff;
+
+}
+.inner-header-title {
+font-size: 60px;
+line-height: 78px;
+font-weight: 700;
+text-transform: uppercase;
+}
+.breadcrumbs-link {
+font-size: 16px;
+line-height: 21px;
+}
+.catalog-filter-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+.control-input {
+  font-size: 18px;
+  line-height: 21px; 
+}
+.hotel-name {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700; 
+}
+.hotel-card-type .hotel-card-price {
+  font-size: 18px;
+  line-height: 21px;
+}
+.hotel-card-rating {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.select-pages {
+  font-size: 18px;
+  line-height: 21x;
+}
+.newsletters-catalog {
+  text-align: center;
+}
+.page-footer-title-catalog {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+page-footer-description-catalog {
+  font-size: 22px;
+  line-height: 26px; 
 }
