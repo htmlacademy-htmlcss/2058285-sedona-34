@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/pt-sans-regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/pt-sans-bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.page-header {
+  font-size: 20px;
+  color: #000000;
+  background-color: #ffffff;
+  font-weight: 700;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navigation-link {
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.welcome-sedona {
+  background-image: url("../images/background-welcome.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.promo {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.advantages {
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #82B3D3;
+  color: #ffffff;
+}
+
+.advantages-title-first {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.advantages-item-first {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.advantages-description {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.advantages-title-second {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.newsletters {
+  background-image: url("../images/background-newsletters.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+.page-footer-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer-contacts-address-phone {
+  text-decoration: none;
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+}
