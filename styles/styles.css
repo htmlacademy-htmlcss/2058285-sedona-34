@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/pt-sans-regular.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/pt-sans-bold.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -40,7 +40,7 @@ body {
 .button-brown {
   background-color: #756157;
 }
-buuton-in-favorite {
+.button-in-favorite {
   background: #7DB54F;
 }
 .main-index {
@@ -106,7 +106,7 @@ buuton-in-favorite {
   line-height: 21px;
 }
 
-.advantages-title-second {
+.advantages-item-second {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
@@ -180,7 +180,7 @@ line-height: 21px;
   line-height: 36px;
   font-weight: 700;
 }
-page-footer-description-catalog {
+.page-footer-description-catalog {
   font-size: 22px;
   line-height: 26px; 
 }
