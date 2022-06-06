@@ -4,13 +4,14 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
 
   <header class="page-header">
     <a class="navigation-logo" href="index.html">
-      <img class="header-logo" src="#" alt="Логотип Седона">
+      <img class="header-logo" src="images\logo.png" width="139" height="70" alt="Логотип Седона">
     </a>
     <nav class="navigation">
       <ul class="navigation-list">
@@ -42,7 +43,7 @@
           </a>
         </li>
         <li class="navigation-item">
-          <a class="visually-hidden" href="#">
+          <a class="button button-brown" href="#">
             Хочу сюда
           </a>
         </li>
@@ -51,6 +52,7 @@
   </header>
 
   <main class="main-inner">
+    <article class="hotel-filters">
     <h1 class="inner-header-title">Гостиницы Седоны</h1>
     <ul class="breadcrumbs">
       <li class="breadcrumbs-item">
@@ -62,7 +64,7 @@
     </ul>
 
     <section>
-      <h2 class="visually-hidden">Фильтры для поиска гостиниц</h2>
+      <h2 class="visually-hidden">Фильтр гостиницы Седоны</h2>
       <fieldset class="catalog-filter-group">
         <legend class="catalog-filter-title">Инфраструктура</legend>
         <ul class="catalog-filter-list">
@@ -114,7 +116,6 @@
       <button class="button" type="reset">Сбросить</button>
     </section>
 
-    <article>
       <select class="select-control" aria-label="Сортировка">
         <option value="popular">Сначала популярные</option>
         <option value="cheap">Сначала дешёвые</option>
@@ -129,17 +130,18 @@
       <a href="#" class="button-list">
         <span class="visually-hidden">Показать список</span>
       </a>
+    </article>
 
       <ul class="hotel-list">
         <li class="hotel-card">
           <a class="hotel-card-link" href="#">
             <img class="hotel-card-image" src="images\hotel-1.jpg" width="300" height="211" alt="">
-            <h3 class="hotel-card-title">Amara Resort & Spa</h3>
+            <h3 class="hotel-name">Amara Resort & Spa</h3>
           </a>
           <p class="hotel-card-type">Гостиница</p>
           <p class="hotel-card-price">От 4000 ₽</p>
-          <a class="hotel-card-button-detaild" href="#">Подробнее</a>
-          <button class="hotel-card-button-favorit">В избранное</button>
+          <a class="button button-brown" href="#">Подробнее</a>
+          <button class="button">В избранное</button>
           <p class="hotel-card-rating">
             <img class="hotel-card-stars" src="#" alt="Четыре звезды">
             Рейтинг: 8,5
@@ -148,12 +150,12 @@
         <li class="hotel-card">
           <a class="hotel-card-link" href="#">
             <img class="hotel-card-image" src="images\hotel-2.jpg" width="300" height="211" alt="">
-            <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
+            <h3 class="hotel-name">Villas at Poco Diablo</h3>
           </a>
           <p class="hotel-card-type">Гостиница</p>
           <p class="hotel-card-price">От 5000 ₽</p>
-          <a class="hotel-card-button-detaild" href="#">Подробнее</a>
-          <button class="hotel-card-button-favorit">В избранное</button>
+          <a class="button button-brown href="#">Подробнее</a>
+          <button class="button button-in-favorite">В избранном</button>
           <p class="hotel-card-rating">
             <img class="hotel-card-stars" src="#" alt="Четыре звезды">
             Рейтинг: 9,2
@@ -162,12 +164,12 @@
         <li class="hotel-card">
           <a class="hotel-card-link" href="#">
             <img class="hotel-card-image" src="images\hotel-3.jpg" width="300" height="211" alt="">
-            <h3 class="hotel-card-title">Desert Quail Inn</h3>
+            <h3 class="hotel-name">Desert Quail Inn</h3>
           </a>
           <p class="hotel-card-type">Гостиница</p>
           <p class="hotel-card-price">От 2500 ₽</p>
-          <a class="hotel-card-button-detaild" href="#">Подробнее</a>
-          <button class="hotel-card-button-favorit">В избранное</button>
+          <a class="button button-brown" href="#">Подробнее</a>
+          <button class="button">В избранное</button>
           <p class="hotel-card-rating">
             <img class="hotel-card-stars" src="#" alt="Три звезды">
             Рейтинг: 6,9
@@ -176,12 +178,12 @@
         <li class="hotel-card">
           <a class="hotel-card-link" href="#">
             <img class="hotel-card-image" src="images\hotel-4.jpg" width="300" height="211" alt="">
-            <h3 class="hotel-card-title">GreenTree Inn</h3>
+            <h3 class="hotel-name">GreenTree Inn</h3>
           </a>
           <p class="hotel-card-type">Гостиница</p>
           <p class="hotel-card-price">От 1500 ₽</p>
-          <a class="hotel-card-button-detaild" href="#">Подробнее</a>
-          <button class="hotel-card-button-favorit">В избранное</button>
+          <a class="button button-brown" href="#">Подробнее</a>
+          <button class="button">В избранное</button>
           <p class="hotel-card-rating">
             <img class="hotel-card-stars" src="#" alt="Две звезды">
             Рейтинг: 5,0
@@ -210,23 +212,23 @@
         </li>
       </ul>
 
-      <p class="select-pages">Гостиниц на странице</p>
+      <p class="select-pages">Гостиниц на странице:</p>
       <select class="select-pages" aria-label="Гостиниц на странице">
         <option value="popular">Сначала популярные</option>
         <option value="cheap">Сначала дешёвые</option>
         <option value="expensive">Сначала дорогие</option>
       </select>
-    </article>
   </main>
+
   <footer class="page-footer">
-    <section class="newsletter">
-      <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
-      <p class="page-footer-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+    <section class="newsletters-catalog">
+      <h2 class="page-footer-title-catalog">Подпишитесь на рассылку</h2>
+      <p class="page-footer-description-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="newsletter-form" action="#" method="post">
         <label for="newsletter-email">Email</label>
         <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email"
           required>
-        <button class="button newsletter-button" type="submit">
+        <button class="button button-big" type="submit">
           <span class="">Подписаться</span>
         </button>
       </form>
@@ -263,7 +265,7 @@
     <section class="footer-advertising">
       <h2 class="visually-hidden">HNML Academy</h2>
       <a class="footer-contacts-map-link" href="https://htmlacademy.ru">
-        <img class="footer-advertising-logo" src="#" alt="Логотип разработчика сайта HNML Academy">
+        <img class="footer-advertising-logo" src="images\html academy.svg"  width="115" height="34" alt="Логотип разработчика сайта HNML Academy">
       </a>
     </section>
   </footer>
