@@ -10,10 +10,9 @@
 <body>
 
   <header class="page-header">
-    <a class="navigation-logo" href="index.html">
-      <img class="header-logo" src="images\logo.png" width="139" height="70" alt="Логотип Седона">
-    </a>
     <nav class="navigation">
+      <div class="page-navigation">
+      <img class="logo" src="images\logo.png" width="139" height="70" alt="Добро пожаловать в Седону">
       <ul class="navigation-list">
         <li class="navigation-item">
           <a class="navigation-link" href="#">
@@ -31,14 +30,14 @@
           </a>
         </li>
       </ul>
-      <ul class="navigation-list">
+      <ul class="navigation-user">
         <li class="navigation-item">
-          <a class="visually-hidden" href="#">
+          <a class="visually-hidden navigation-link" href="#">
             Поиск
           </a>
         </li>
         <li class="navigation-item">
-          <a class="visually-hidden" href="#">
+          <a class="visually-hidden navigation-link" href="#">
             Избранное
           </a>
         </li>
@@ -48,10 +47,12 @@
           </a>
         </li>
       </ul>
+    </div>
     </nav>
   </header>
 
-  <main class="main-inner">
+  <main class="main-inner main-container">
+    <div class="page-container">
     <article class="hotel-filters">
     <h1 class="inner-header-title">Гостиницы Седоны</h1>
     <ul class="breadcrumbs">
@@ -115,7 +116,10 @@
       <button class="button" type="submit">Применить</button>
       <button class="button" type="reset">Сбросить</button>
     </section>
-
+  </article>
+      
+    <div class="select-container">
+      <div class="select-title">Найдено гостиниц:</div>
       <select class="select-control" aria-label="Сортировка">
         <option value="popular">Сначала популярные</option>
         <option value="cheap">Сначала дешёвые</option>
@@ -130,8 +134,8 @@
       <a href="#" class="button-list">
         <span class="visually-hidden">Показать список</span>
       </a>
-    </article>
-
+    </div>
+ 
       <ul class="hotel-list">
         <li class="hotel-card">
           <a class="hotel-card-link" href="#">
@@ -218,56 +222,63 @@
         <option value="cheap">Сначала дешёвые</option>
         <option value="expensive">Сначала дорогие</option>
       </select>
+    </div>
   </main>
 
   <footer class="page-footer">
-    <section class="newsletters-catalog">
-      <h2 class="page-footer-title-catalog">Подпишитесь на рассылку</h2>
-      <p class="page-footer-description-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
-      <form class="newsletter-form" action="#" method="post">
-        <label for="newsletter-email">Email</label>
-        <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email"
-          required>
-        <button class="button button-big" type="submit">
-          <span class="">Подписаться</span>
-        </button>
-      </form>
-    </section>
+    <div class="page-footer-container">
+      <section class="newsletters-catalog">
+        <h2 class="page-footer-title-catalog">Подпишитесь на рассылку</h2>
+        <p class="page-footer-description-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="newsletter-form" action="#" method="post">
+          <label for="newsletter-email">Email</label>
+          <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email"
+            required>
+          <button class="button button-big" type="submit">
+            <span class="">Подписаться</span>
+          </button>
+        </form>
+      </section>
 
-    <section class="footer-social">
-      <h2 class="visually-hidden">Иконки соцсетей</h2>
-      <ul class="footer-social-list">
-        <li class="footer-social-item">
-          <a class="button" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">Вконтакте</span>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="button" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Телеграм</span>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="button" href="https://www.youtube.com/user/htmlacademy">
-            <span class="visually-hidden">Ютуб</span>
-          </a>
-        </li>
-      </ul>
-    </section>
+      <div class="contacts">
+        <section class="footer-social">
+          <h2 class="visually-hidden">Иконки соцсетей</h2>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a class="button" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Телеграм</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button" href="https://www.youtube.com/user/htmlacademy">
+                <span class="visually-hidden">Ютуб</span>
+              </a>
+            </li>
+          </ul>
+        </section>
 
-    <section class="footer-contacts">
-      <h2 class="visually-hidden">Контакты</h2>
-      <address class="footer-contacts-address">
-        <a class="footer-contacts-address-phone" href="#">+7 (812) 812-12-12</a>
-      </address>
-    </section>
+        <section class="footer-contacts">
+          <h2 class="visually-hidden">Контакты</h2>
+          <address class="footer-contacts-address">
+            <a class="footer-contacts-address-phone" href="#">+7 (812) 812-12-12</a>
+          </address>
+        </section>
 
-    <section class="footer-advertising">
-      <h2 class="visually-hidden">HNML Academy</h2>
-      <a class="footer-contacts-map-link" href="https://htmlacademy.ru">
-        <img class="footer-advertising-logo" src="images\html-academy.svg"  width="115" height="34" alt="Логотип разработчика сайта HNML Academy">
-      </a>
-    </section>
+        <section class="footer-advertising">
+          <h2 class="visually-hidden">HNML Academy</h2>
+          <a class="footer-contacts-map-link" href="https://htmlacademy.ru">
+            <img class="footer-advertising-logo" src="images\html-academy.svg" width="115" height="34"
+              alt="Логотип разработчика сайта HNML Academy">
+          </a>
+        </section>
+        </div>
+    </div>
   </footer>
+</div>
 </body>
 </html>

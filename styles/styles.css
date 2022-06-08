@@ -62,10 +62,7 @@ body {
 .main-index {
   text-align: center;
 }
-.page-container {
-  width: 1200px;
-  margin: 0 auto;
-}
+
 .page-header {
   font-size: 20px;
   color: #000000;
@@ -73,20 +70,26 @@ body {
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
-}
-
-.navigation {
-  display: flex;
   width: 1200px;
   margin: 0 auto;
+}
+
+.page-navigation {
+  display: flex;
+  margin: 0px 70px;
 }
 
 .navigation-list {
   margin: 0;
   padding: 0;
   width: 390px;
+  margin-right: 237px;
 }
-
+.navigation-item {
+  margin: 0;
+  padding: 0;
+  width: 264px;
+}
 .navigation-user {
   margin: 0;
   padding: 0;
@@ -117,6 +120,10 @@ body {
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
+  }
+  .page-container {
+    width: 1200px;
+    margin: 0 auto;
   }
 
   .advantages {
@@ -214,7 +221,6 @@ body {
     background-size: 100% auto;
     background-repeat: no-repeat;
     color: #ffffff;
-
   }
 
   .inner-header-title {
@@ -227,6 +233,18 @@ body {
   .breadcrumbs-link {
     font-size: 16px;
     line-height: 21px;
+  }
+  .select-container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .select-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase; 
   }
 
   .catalog-filter-title {
