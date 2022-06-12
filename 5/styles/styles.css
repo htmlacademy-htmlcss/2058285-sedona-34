@@ -58,6 +58,10 @@ body {
 .main-container {
   flex-grow: 1;
 }
+.main-inner {
+  width: 1200;
+  margin: 0 auto;
+}
 
 .main-index {
   text-align: center;
@@ -76,7 +80,7 @@ body {
 
 .page-navigation {
   display: flex;
-  margin: 0px 70px;
+  margin: 0 70px;
 }
 
 .navigation-list {
@@ -192,7 +196,7 @@ body {
   }
   .footer-social {
     width: 142px;
-  }  
+  }
   .footer-contacts {
     text-align: center;
     margin: 0;
@@ -200,7 +204,7 @@ body {
     width: 720px;
   }
   .footer-advertising {
-    width: 115px; 
+    width: 115px;
   }
   .page-footer-title {
     font-size: 30px;
@@ -233,18 +237,6 @@ body {
   .breadcrumbs-link {
     font-size: 16px;
     line-height: 21px;
-  }
-  .select-container {
-    width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-  }
-  .select-title {
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: 700;
-    text-transform: uppercase; 
   }
 
   .catalog-filter-title {
@@ -292,4 +284,66 @@ body {
   .page-footer-description-catalog {
     font-size: 22px;
     line-height: 26px;
+  }
+  .filter-content {
+   margin:0 auto;
+    width: 1059.53;
+  }
+  .breadcrumbs {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 110.43;
+  }
+  .filter {
+    display: flex;
+  }
+  .catalog-filter-list {
+    margin: 0;
+    padding: 0;
+  }
+  .catalog-filter-infra {
+    width: 150.43;
+    margin-right: 70;
+  }
+  .catalog-filter-type {
+   width: 145.41;
+  }
+  .select-container {
+    display: flex;
+    margin: 0 auto;
+    width: 1057px;
+  }
+  .select-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .pagination-filter {
+    display: flex;
+    width: 1056;
+    margin: 0 auto;
+  }
+  .pagination {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 400;
+  }
+  .pages-quantity {
+    width: 386;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
   }
