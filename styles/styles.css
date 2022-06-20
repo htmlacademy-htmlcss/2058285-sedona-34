@@ -30,6 +30,11 @@ body {
   background-color: #ffffff;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 .button {
   font-family: inherit;
   font-size: 16px;
@@ -278,7 +283,7 @@ body {
   width: 1060px;
   margin: auto;
   margin-top: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 
 .footer-social {
@@ -363,14 +368,39 @@ list-style-type: none;
 }
 
 .hotel-list {
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  column-gap: 18px;
+  margin-bottom: 96px;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin-left: 73px;
+  margin-right: 73px;
+  padding: 20px;
+  flex-grow: 1;
 }
+
+.hotel-card {
+  display: grid;
+  column-gap: 20px;
+  row-gap: 16px;
+  grid-template-columns: 140px 140px;
+}
+
+.hotel-card-image-link {
+  grid-column: 1 / -1;
+}
+
+.hotel-card-title-link {
+  text-decoration: none;
+  color: #000000;
+  grid-column: 1 / -1;
+}
+
 .hotel-name {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
+  margin: 0;
 }
 
 .hotel-card-type .hotel-card-price {
