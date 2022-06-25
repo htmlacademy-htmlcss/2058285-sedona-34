@@ -488,6 +488,7 @@ list-style-type: none;
   min-height: 9px;
   fill: #ffffff;
   margin-left: 25px;
+  margin-left: 10px;
   margin-right: 10px;
   margin-top: 6px;
   margin-bottom: 6px;
@@ -575,7 +576,12 @@ border-color: #E5E5E5;
   padding: 0;
 }
 
-.hotel-card-type .hotel-card-price {
+.hotel-card-type {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.hotel-card-price {
   font-size: 18px;
   line-height: 21px;
 }
@@ -610,7 +616,7 @@ border-color: #E5E5E5;
   background-image: url("../images/background-filters.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  padding-top: 30px;
+  padding-top: 35px;
   padding-bottom: 70px;
   margin-top: -5px;
 }
@@ -663,10 +669,10 @@ border-color: #E5E5E5;
   width: 1057px;
   margin: 0 auto;
   justify-content: space-between;
-  margin-top: 50px;
-  margin-bottom: 56px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
-.celect-control {
+.select-control {
   margin: 0;
   padding: 0;
   margin-right: 78px;
