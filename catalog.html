@@ -25,37 +25,38 @@
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link navigation-link-home" href="#">
                 Гостиницы
               </a>
             </li>
           </ul>
           <ul class="navigation-user">
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link-icon" href="#">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M18.1585 17.05L14.448 13.35C15.4508 12.05 16.1528 10.35 16.1528 8.44995C16.1528 4.04995 12.5426 0.449951 8.13013 0.449951C3.71764 0.449951 0.107422 4.14995 0.107422 8.54995C0.107422 12.95 3.71764 16.55 8.13013 16.55C9.93524 16.55 11.6401 15.95 13.044 14.85L16.7545 18.55L18.1585 17.05ZM8.13013 14.55C4.82076 14.55 2.1131 11.85 2.1131 8.54995C2.1131 5.24995 4.82076 2.54995 8.13013 2.54995C11.4395 2.54995 14.1472 5.24995 14.1472 8.54995C14.1472 11.85 11.4395 14.55 8.13013 14.55Z" />
                   </svg>
-                  <span class="visually-hidden">Избранное</span>
+                  <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
-                <svg class="navigation-icon" width="19" height="17" viewBox="0 0 19 17" xmlns="http://www.w3.org/2000/svg">
+              <a class="navigation-link-icon" href="#">
+                <svg class="navigation-icon" aria-hidden="true" focusable="false" width="19" height="17" viewBox="0 0 19 17" xmlns="http://www.w3.org/2000/svg">
                   <path d="M9.57663 17C9.27578 17 8.97493 16.9 8.77436 16.6C3.35903 10.5 2.05534 9.1 1.75449 8.7C1.0525 7.8 0.651367 6.6 0.651367 5.4C0.651367 2.4 3.05818 0 6.16698 0C7.47067 0 8.67407 0.5 9.67691 1.3C10.6797 0.5 11.9834 0 13.1868 0C16.1954 0 18.7025 2.4 18.7025 5.4C18.7025 6.7 18.201 7.9 17.3988 8.8L10.3789 16.7C10.1783 16.9 9.97776 17 9.57663 17ZM3.5596 7.5C3.86045 7.9 7.06953 11.5 9.67691 14.4L15.8945 7.4C16.3959 6.9 16.5965 6.2 16.5965 5.4C16.5965 3.6 15.0922 2.1 13.2871 2.1C12.2843 2.1 11.2815 2.6 10.5795 3.4C10.2786 3.7 9.97776 3.8 9.67691 3.8C9.37606 3.8 9.07521 3.6 8.87464 3.4C8.17265 2.6 7.16982 2.1 6.16698 2.1C4.36187 2.1 2.85761 3.6 2.85761 5.4C2.75733 6.3 3.15846 7 3.5596 7.5C3.45931 7.5 3.45931 7.5 3.5596 7.5Z" fill="black"/>
                   </svg>
                <span class="visually-hidden">Избранное</span>
               </a>
             </li>
-            <li class="navigation-item button-header">
-              <a class="button button-brown" href="#">
-                Хочу сюда
+            <li class="navigation-item">
+              <a class="button  button-header button-brown" href="#">
+                Хочу сюда!
               </a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
+
 
     <main class="main-inner main-container">
       <div class="page-container">
@@ -65,12 +66,15 @@
               <h1 class="inner-header-title">Гостиницы Седоны</h1>
               <ul class="breadcrumbs">
                 <li class="breadcrumbs-item">
-                  <a class="breadcrumbs-link-index" href="index.html">
+                  <a class="breadcrumbs-link breadcrumbs-link-index" href="index.html">
                    <span class="visually-hidden">Главная</span>
-                   </a>
-                </li>
+                  </a>
+                 </li>
+                 <li class="breadcrumbs-item">
+                  <span class="breadcrumbs-link breadcrumbs-arrow"></span>
+                 </li>
                 <li class="breadcrumbs-item">
-                  <a class="breadcrumbs-link">Гостиницы</a>
+                  <a class="breadcrumbs-link breadcrumbs-hotel">Гостиницы</a>
                 </li>
               </ul>
 
@@ -140,15 +144,40 @@
           <option value="cheap">Сначала дешёвые</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
-        <a class="button-icon" href="#">
+        <div>
+        <a class="button-list" href="#">
+          <svg class="view view-active" aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 0H0V6H4V0Z" fill="black"/>
+            <path d="M16 0H12V6H16V0Z" fill="black"/>
+            <path d="M10 0H6V6H10V0Z" fill="black"/>
+            <path d="M4 8H0V14H4V8Z" fill="black"/>
+            <path d="M16 8H12V14H16V8Z" fill="black"/>
+            <path d="M10 8H6V14H10V8Z" fill="black"/>
+            </svg>
           <span class="visually-hidden">Показать карточки</span>
         </a>
-        <a href="#" class="button-slidshow">
+        <a href="#" class="button-list">
+          <svg class="view" aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 12H0V14H16V12Z" fill="black"/>
+            <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black"/>
+            </svg>
           <span class="visually-hidden">Показать слайд-шоу</span>
         </a>
         <a href="#" class="button-list">
+          <svg class="view" aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 0H0V2H2V0Z" fill="black"/>
+            <path d="M16 0H4V2H16V0Z" fill="black"/>
+            <path d="M2 4H0V6H2V4Z" fill="black"/>
+            <path d="M16 4H4V6H16V4Z" fill="black"/>
+            <path d="M2 8H0V10H2V8Z" fill="black"/>
+            <path d="M16 8H4V10H16V8Z" fill="black"/>
+            <path d="M2 12H0V14H2V12Z" fill="black"/>
+            <path d="M16 12H4V14H16V12Z" fill="black"/>
+            </svg>
+
           <span class="visually-hidden">Показать список</span>
         </a>
+      </div>
       </div>
 
       <ul class="hotel-list">
@@ -163,7 +192,7 @@
           <p class="hotel-card-price">От 4000 ₽</p>
           <a class="button button-brown" href="#">Подробнее</a>
           <button class="button">В избранное</button>
-          <img class="hotel-card-stars" src="#" alt="Четыре звезды">
+          <img class="four-card-stars" src="images\stars-four.png" alt="Четыре звезды">
           <p class="hotel-card-rating"> Рейтинг: 8,5 </p>
         </li>
         <li class="hotel-card">
@@ -177,7 +206,7 @@
           <p class="hotel-card-price">От 5000 ₽</p>
           <a class="button button-brown href="#">Подробнее</a>
           <button class="button button-in-favorite">В избранном</button>
-          <img class="hotel-card-stars" src="#" alt="Четыре звезды">
+          <img class="four-card-stars" src="images\stars-four.png" alt="Четыре звезды">
           <p class="hotel-card-rating">Рейтинг: 9,2</p>
         </li>
         <li class="hotel-card">
@@ -191,7 +220,7 @@
           <p class="hotel-card-price">От 2500 ₽</p>
           <a class="button button-brown" href="#">Подробнее</a>
           <button class="button">В избранное</button>
-          <img class="hotel-card-stars" src="#" alt="Три звезды">
+          <img class="three-card-stars" src="images\stars-three.png" alt="Три звезды">
           <p class="hotel-card-rating">Рейтинг: 6,9</p>
         </li>
         <li class="hotel-card">
@@ -205,30 +234,30 @@
           <p class="hotel-card-price">От 1500 ₽</p>
           <a class="button button-brown" href="#">Подробнее</a>
           <button class="button">В избранное</button>
-          <img class="hotel-card-stars" src="#" alt="Две звезды">
-          <p class="hotel-card-rating">Рейтинг: 5,0</p>
+          <img class="two-card-stars" src="images\stars-two.png" alt="Две звезды">
+          <p class=" hotel-card-rating">Рейтинг: 5,0</p>
         </li>
       </ul>
 
       <div class="pagination-filter">
         <ul class="pagination">
           <li class="pagination-item">
-            <a class="pagination-link">1</a>
+            <a class="button pagination-link">1</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
+            <a class="button pagination-link" href="#">2</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
+            <a class="button pagination-link" href="#">3</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
+            <a class="button pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">...</a>
+            <a class="button pagination-link" href="#">...</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">10</a>
+            <a class="button pagination-link" href="#">10</a>
           </li>
         </ul>
 
@@ -265,17 +294,17 @@
               <h2 class="visually-hidden">Иконки соцсетей</h2>
               <ul class="footer-social-list">
                 <li class="footer-social-item">
-                  <a class="button button-social" href="https://vk.com/htmlacademy">
+                  <a class="footer-social-link footer-social-vk" href="https://vk.com/htmlacademy">
                     <span class="visually-hidden">Вконтакте</span>
                   </a>
                 </li>
                 <li class="footer-social-item">
-                  <a class="button button-social" href="https://t.me/htmlacademy">
+                  <a class="footer-social-link footer-social-telegram" href="https://t.me/htmlacademy">
                     <span class="visually-hidden">Телеграм</span>
                   </a>
                 </li>
                 <li class="footer-social-item">
-                  <a class="button button-social" href="https://www.youtube.com/user/htmlacademy">
+                  <a class="footer-social-link footer-social-youtube" href="https://www.youtube.com/user/htmlacademy">
                     <span class="visually-hidden">Ютуб</span>
                   </a>
                 </li>
