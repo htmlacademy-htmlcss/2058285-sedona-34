@@ -505,7 +505,8 @@ list-style-type: none;
 }
 
 .button-list {
-list-style-type: none;
+  text-decoration: none;
+  align-self: flex-end;
 }
 
 .view {
@@ -517,7 +518,9 @@ border-radius: 4px;
 border-width: 2px;
 border-style: solid;
 border-color: #E5E5E5;
+align-content: flex-end;
 }
+
 .view-active {
   border-color: #000000;
 }
@@ -540,7 +543,7 @@ border-color: #E5E5E5;
   display: grid;
   grid-template-columns: repeat(3, 340px);
   column-gap: 18px;
-  row-gap: 40px;
+  row-gap: 35px;
   margin-bottom: 96px;
   list-style-type: none;
   margin-left: 73px;
@@ -653,8 +656,10 @@ border-color: #E5E5E5;
 }
 
 .button-apply-first {
+  padding: 14px 15px;
+  width: 160px;
   margin-top: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .button-apply-second{
@@ -669,8 +674,8 @@ border-color: #E5E5E5;
   width: 1057px;
   margin: 0 auto;
   justify-content: space-between;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 50px;
+  margin-bottom: 45px;
 }
 .select-control {
   margin: 0;
@@ -734,10 +739,12 @@ border-color: #E5E5E5;
   border-radius: 4px;
 }
 
-.pagination-link
-
 .pagination-item:not(:last-child) {
   margin-right: 8px;
+}
+
+.button-pagination {
+  color: #000000;
 }
 
 .hotel-pages {
