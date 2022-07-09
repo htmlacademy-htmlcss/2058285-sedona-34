@@ -70,7 +70,6 @@ p {
   color: #E5E5E5;
 }
 
-
 .button-big {
   font-size: 20px;
   line-height: 36px;
@@ -189,7 +188,6 @@ p {
     background-color: #756257;
     content: "";
   }
-
 
 .navigation-icon {
   position: absolute;
@@ -352,6 +350,33 @@ p {
   padding: 94px 200px;
 }
 
+.newsletter-form {
+  display: flex;
+}
+
+.field {
+  margin: 0;
+  font: inherit;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 20px 22px 19px 22px;
+  width: 590px;
+  background-color: #F2F2F2;
+  color: rgba (0, 0, 0, 0.6);
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  cursor: pointer;
+}
+
+.button-subscribe {
+  width: 200px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
 .page-footer-container {
   width: 1200px;
   margin: 0 auto;
@@ -362,7 +387,7 @@ p {
   width: 1060px;
   margin: auto;
   margin-top: 40px;
-  margin-bottom: 0;
+  margin-bottom: 35px;
 }
 
 .footer-social {
@@ -384,23 +409,20 @@ list-style-type: none;
   min-width: 24px;
   min-height: 14px;
   padding: 13px 12px;
+  fill: #83B3D3;
 }
 
-.footer-social-vk {
-  background-image: url("../images/vk.svg");
-  width: 24px;
-  height: 14px;
+.footer-social-link:hover {
+ fill: #68A2CA;
 }
 
-.footer-social-telegram {
-  background-image: url("../images/telegram.svg");
-  width: 24px;
-  height: 14px;
-}
+.footer-social-link:focus {
+  fill: #68A2CA;
+ }
 
-.footer-social-youtube {
-  background-image: url("../images/youtube.svg");
-}
+ .footer-social-link:active {
+  fill:rgba(104, 162, 202, 0.3);
+ }
 
 .footer-contacts {
   margin: 0;
@@ -433,12 +455,45 @@ list-style-type: none;
   width: 720px;
   text-align: center;
 }
+
+.footer-contacts-address {
+  margin-top: 5px;
+}
+
 .footer-contacts-address-phone {
   font-style: normal;
   text-decoration: none;
   font-size: 40px;
   line-height: 40px;
   color: #000000;
+}
+
+.footer-contacts-address-phone:hover {
+ color: #CCCCCC;
+ }
+
+.footer-contacts-address-phone:focus {
+ color: #CCCCCC;
+ }
+
+.footer-contacts-address-phone:active {
+color: rgba(117, 97, 87, 0.3);
+}
+
+.html-academy{
+  fill: #000000;
+}
+
+.html-academy:hover {
+  fill:#756157;
+}
+
+.html-academy:focus {
+  fill: #756157;
+}
+
+.html-academy:active {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 .hotel-filters {
@@ -487,7 +542,6 @@ list-style-type: none;
   min-width: 6px;
   min-height: 9px;
   fill: #ffffff;
-  margin-left: 25px;
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 6px;
