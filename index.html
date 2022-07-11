@@ -218,6 +218,107 @@
       </div>
     </div>
   </footer>
+  <div class="modal-container">
+    <div class="modal modal-auth">
+      <button class="modal-close-button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
+        <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="field-group appointment-form-date">
+            <div class="form-label">
+            <label for="appointment-date">
+             Дата заезда:</label>
+            </div>
+            <input class="field field-date" type="text" id="appointment-date" name="appointment-date" placeholder="27 апреля 2020">
+          </p>
+        </form>
+        <p class="field-ps">Мы не можем отправить вас в прошлое.</p>
+          <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group appointment-form-date">
+              <div class="form-label">
+              <label for="appointment-date">
+                  Дата выезда:</label>
+              </div>
+              <input class="field field-date" type="text" id="appointment-date" name="appointment-date" placeholder="1 сентября 2021">
+            </p>
+          </form>
+          <p class="field-ps field-ps-out">На эти даты есть свободные номера. Пока есть.</p>
+
+          <div class="big-small">
+            <div class="big">
+          <form class="appointment-form guantity-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group">
+              <div class="form-label">
+              <label for="appointment-date">
+               Взрослые:</label>
+              </div>
+              <div class="field field-date field-quantity field-box">
+                <button class="button-plus button-minus" type="button">
+                  <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
+                    </svg>
+                </button>
+              <input class="visually-hidden" type="text" id="appointment-date" name="appointment-date" placeholder="2">
+              <span>2</span>
+              <button class="button-plus">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.3" d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
+                  </svg>
+              </button>
+            </div>
+            </p>
+          </form>
+        </div>
+        <div class="child">
+          <form class="appointment-form quantity-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group">
+              <div class="form-label form-child">
+              <label for="appointment-date appointment-child">
+               Дети:
+               <span class="tooltip">
+                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                  <span class="tooltip-decoration"></span>
+                  <svg class="info" width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_33716_652)">
+                    <path d="M0 9H1L1 3H0L0 9Z" fill="white"/>
+                    <path d="M1 0H0V1H1V0Z" fill="white"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_33716_652">
+                    <rect width="1" height="9" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                </button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </span>
+              </span>
+              </label>
+              </div>
+              <div class="field field-date field-quantity field-box">
+                <button class="button-plus button-minus" type="button">
+                  <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
+                    </svg>
+                </button>
+              <input class="visually-hidden" type="text" id="appointment-date" name="appointment-date" placeholder="2">
+              <span>1</span>
+              <button class="button-plus">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.3" d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
+                  </svg>
+              </button>
+            </div>
+            </p>
+          </form>
+        </div>
+      </div>
+      </section>
+      <button class="button buton-big button-modal" type="button">Найти</button>
+    </div>
+  </div>
 </body>
 
 </html>
