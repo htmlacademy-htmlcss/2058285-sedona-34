@@ -28,6 +28,7 @@ body {
   line-height: 26px;
   color: #000000;
   background-color: #ffffff;
+
 }
 
 p {
@@ -168,6 +169,12 @@ p {
   background-color: #ffffff;
   text-decoration: none;
   text-transform: capitalize;
+}
+
+a:hover,
+a:focus,
+a:active {
+ outline: auto;
 }
 
 .navigation-link-icon {
@@ -1015,7 +1022,7 @@ align-content: flex-end;
   width: 60px;
   height: 60px;
   font-size: 20px;
-  padding: 11px 23px 11px 23px;
+  padding: 11px 11px 11px 11px;
   line-height: 36px;
   font-weight: 700;
   color: #ffffff;
@@ -1033,7 +1040,10 @@ align-content: flex-end;
 }
 
 .hotel-pages {
+  margin: 0;
+  padding: 0;
   margin-top: 19px;
+  font: inherit;
   font-size: 18px;
   line-height: 21px;
 }
@@ -1096,6 +1106,10 @@ align-content: flex-end;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
+}
+
+.modal-container-close {
+  display: none;
 }
 
 .appointment-form {
@@ -1231,11 +1245,11 @@ display: flex;
   text-transform: none;
   padding: 15px 18px 15px 22px;
   border-radius: 8px;
-  display: block;
   width: 216px;
   margin-top: 12px;
   left: 50%;
   transform: translateX(-50%);
+  display: none;
 }
 
 .tooltip-text:after {
@@ -1258,4 +1272,12 @@ display: flex;
 
 .number-of-guests {
   appearance: none;
+}
+
+.shadow {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.modal-container-close {
+  display: none;
 }
