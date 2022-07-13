@@ -1074,7 +1074,7 @@ align-content: flex-end;
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 40px;
+  top: 58px;
   right: 70px;
   width: 53px;
   height: 53px;
@@ -1099,7 +1099,7 @@ align-content: flex-end;
 }
 
 .appointment-form {
-display: flex;
+  display: flex;
 font-size: 20px;
 line-height: 26px;
 font-weight: 700;
@@ -1126,7 +1126,8 @@ font-weight: 700;
   font-size: 16px;
   line-height: 21px;
   height: 29px;
-  margin-bottom: 11px;
+  margin-top: 5px;
+  margin-bottom: 6px;
   margin-left: 155px;
 }
 
@@ -1146,7 +1147,13 @@ font-weight: 700;
   justify-content: space-between;
 }
 
+.field-group {
+display: flex;
+}
+
 .button-plus {
+  margin: 0;
+  padding: 0;
   display: inline-block;
   background-color: rgba(0, 0, 0, 0);
   border: none;
@@ -1155,6 +1162,8 @@ font-weight: 700;
 }
 
 .button-minus {
+  margin: 0;
+  padding: 0;
   margin-top: -7px;
 }
 
@@ -1185,7 +1194,7 @@ font-weight: 700;
 }
 
 .tooltip {
-  position: absolute;
+  position: relative;
   margin-top: 12px;
 }
 
@@ -1193,7 +1202,17 @@ font-weight: 700;
  min-width: 97px;
 }
 
+.number-of-guests {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: inherit;
+  min-width: 22px;
+  text-align: center;
+}
+
 .button-modal {
+  padding: 12px 26px 12px 26px;
   width: 575px;
   margin-top: 40px;
 }
@@ -1203,7 +1222,7 @@ font-weight: 700;
 }
 
 .tooltip-text {
-  position: relative;
+  position: absolute;
   background-color: #333333;
   color: #ffffff;
   font-size: 16px;
@@ -1214,7 +1233,9 @@ font-weight: 700;
   border-radius: 8px;
   display: block;
   width: 216px;
-  margin-top: 6px;
+  margin-top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .tooltip-text:after {
@@ -1228,4 +1249,13 @@ font-weight: 700;
   right:0;
   margin-left: auto;
   margin-right: auto;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.number-of-guests {
+  appearance: none;
 }
